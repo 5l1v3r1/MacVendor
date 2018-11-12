@@ -18,9 +18,9 @@
 
   - For Using With **python**
 ```python
- from MacVendor import Vendor
+ from MacVendor import Vendor as ven
  MAC = "48:60:5F:83:60:A4"
- company = Vendor.mac(MAC)
+ company = ven.mac(MAC)
  print("Vendor Company Of[{}] :> {}".format(MAC,company))
 
 ```
