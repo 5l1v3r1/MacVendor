@@ -25,7 +25,8 @@
 
 ```
    - Using Like **Script**:
-	* python MacVendor.py 48:60:5F:83:60:A4
+   
+      * python MacVendor.py 48:60:5F:83:60:A4
 
 # That's All:)
  - This **Method** By: Oseid Aldary
