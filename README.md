@@ -13,8 +13,8 @@
   - pip install -r requirements.txt
 
 # Usage:
-  * You Can Useing This Method LIke A Python Method
-  * So You Can **Import** It OR Using it like A Script
+  * You Can Using This **Method** LIke A Python Method
+  * So You Can **Import** It OR Using It Like A **Script**
 
   - For Using With **python**
 ```python
