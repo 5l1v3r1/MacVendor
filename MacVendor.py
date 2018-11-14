@@ -2,7 +2,7 @@
 #Copyright(c) 2018: By Oseid Aldary
 #      MacVendor  : Get Device Vendor Company Name By He Mac Address
 #      Coded BY   : Oseid Aldary
-#      Follow Me  : githoub.com/Oseid
+#      Follow Me  : github.com/Oseid
 #
 #Libraries
 import sys,urllib2,requests,json,codecs,socket
