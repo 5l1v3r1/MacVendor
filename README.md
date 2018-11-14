@@ -1,6 +1,6 @@
 # MacVendor:
 ***
- - A Simple Python **Method** for Get Any MacAddress Vendor Company Name
+ - A Simple Python **Module** for Get Any MacAddress Vendor Company Name
 ***
 # ScreenShot
 
@@ -13,7 +13,7 @@
   - pip install -r requirements.txt
 
 # Usage:
-  * You Can Using This **Method** LIke A Python Method
+  * You Can Using This **Module** LIke A Python Method
   * So You Can **Import** It OR Using It Like A **Script**
 
   - For Using With **python**
@@ -29,6 +29,6 @@
       * python MacVendor.py 48:60:5F:83:60:A4
 
 # That's All:)
- - This **Method** By: Oseid Aldary
+ - This **Module** By: Oseid Aldary
  - Thanks For Usage :)
  - Have A Nice Day,GoodBye :)
