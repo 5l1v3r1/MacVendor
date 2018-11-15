@@ -5,7 +5,7 @@
 #      Follow Me  : github.com/Oseid
 #
 #Libraries
-import sys,urllib2,requests,json,codecs,socket
+import sys,urllib2,json,codecs,socket
 # MacVendor Class
 class MacVendor:
   # Check Internet Connection..
@@ -38,15 +38,15 @@ class MacVendor:
       # The Mac Address Is Not Correct !!!
       return "\n[!] Error: Please Input Correct Mac Address !!!"
     except KeyError: # Try Other Website Datebace
-        response  = requests.get(url="http://api.macvendors.com/%s"%(mac))
-        if "Page not found" not in response.text:
-	 #Return Vendor Company Name
-          return response.text
-        else:
+        try:
+		response = urllib2.urlopen("http://api.macvendors.com/{}".format(mac)).read()
+		#Return Vendor Company Name
+		return response
+	except urllib2.HTTPError:
           return "\n[!] Error: Unknown Vendor Company Name Of MAC[ {} ]".format(mac)
 Vendor = MacVendor()
 if len(sys.argv) ==2:
- if sys.argv[1] !=None and len(sys.argv[1]) ==17:
+ if sys.argv[1] !=None and len(sys.argv[1]) >=8:
 	print("\n[>] SOURCE MAC ADDRESS : "+sys.argv[1])
 	print("[+] Vendor Company Name: "+Vendor.mac(sys.argv[1]))
 	print("")
